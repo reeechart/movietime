@@ -1,8 +1,9 @@
-package com.reeechart.movietime
+package com.reeechart.movietime.activities
 
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
+import com.reeechart.movietime.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
