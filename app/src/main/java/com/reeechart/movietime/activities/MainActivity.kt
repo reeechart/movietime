@@ -1,5 +1,6 @@
 package com.reeechart.movietime.activities
 
+import android.graphics.Color
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
