@@ -8,7 +8,7 @@ import java.util.*
 abstract class MovieModel {
     abstract val id: Int
     abstract val title: String
-    abstract val genre: Array<String>
+    abstract val genre: Array<Int>
     abstract val description: String
-    abstract val posterPath: String
+    abstract val posterPath: String?
 }
