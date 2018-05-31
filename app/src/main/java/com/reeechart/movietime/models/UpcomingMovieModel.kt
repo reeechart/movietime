@@ -10,7 +10,7 @@ class UpcomingMovieModel: MovieModel() {
         get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
     override val title: String
         get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
-    override val genre: Array<String>
+    override val genre: Array<Int>
         get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
     override val description: String
         get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
