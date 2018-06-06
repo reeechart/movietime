@@ -4,10 +4,8 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.view.View
 import android.view.WindowManager
 import com.reeechart.movietime.R
-import kotlinx.android.synthetic.main.activity_splash_screen.*
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -15,9 +13,9 @@ import kotlinx.android.synthetic.main.activity_splash_screen.*
  */
 class SplashScreenActivity : AppCompatActivity() {
     companion object {
-        private val SPLASH_SCREEN_DURATION: Int = 2000
+        private val SPLASH_SCREEN_DURATION: Int = 3000
     }
-    private val mHideHandler = Handler()
+    private val activityChangeHandler = Handler()
 
     private val activityChangerRunnable = Runnable {
         val mainIntent: Intent = Intent(this, MainActivity::class.java)
@@ -45,7 +43,7 @@ class SplashScreenActivity : AppCompatActivity() {
      * previously scheduled calls.
      */
     private fun delayedMainActivity(delayMillis: Int) {
-        mHideHandler.removeCallbacks(activityChangerRunnable)
-        mHideHandler.postDelayed(activityChangerRunnable, delayMillis.toLong())
+        activityChangeHandler.removeCallbacks(activityChangerRunnable)
+        activityChangeHandler.postDelayed(activityChangerRunnable, delayMillis.toLong())
     }
 }
